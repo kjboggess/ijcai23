@@ -5,7 +5,7 @@ Repository for supplementary material for "Explainable Multi-Agent Reinforcement
 OS tested on
 "Centos Linux 7"
 <hr>
-Set up:<br>
+<b>Set up:</b><br>
  1. Download Shared Experience Actor Critic for MARL and install as instructed<br>
 	*Used for training and evaluation policiesv
 	Location: https://github.com/semitable/seac<br>
@@ -20,23 +20,23 @@ Set up:<br>
 	*Used to set up Quine-Mccluskey algorithm<br>
 	Location: https://gitlab.tue.nl/ha800-hri/hayes-shah<br>
  5. Install remaining requirements in "requirements.txt" if needed<br>
-
-Training a policy:
+<hr>
+<b>Training a policy:</b>
  1. Polices should be trained as described by Shared Experience Actor Critic for MARL
 	Location: https://github.com/semitable/seac
  2. Any other MARL method can be used to train a policy a preferred
  3. An example policy for each domain is given in "Code Pipeline/results/trained_models/###/u####
  4. An example environment for training is given in Code Pipeline/seac MARL replacement files
-
-Evaluating a policy:
+<hr>
+<b>Evaluating a policy:</b>
  1. Add the "evaluateForConRoll.py" file to "seac/seac" folder
  2. Set policy path, environment name, time limit, number of evaluation steps, number of agents, number of tasks, and start state in file (Examples given in file)
  3. Define any new rules for low-level to high-level state conversion in file
  4. Run file -> "python evaluateForConRoll.py"
  5. Example files produced from small evaluation (100 steps) are given in "Model Examples/runningexample"
  4. An example environment for evaluation is given in Code Pipeline/seac MARL replacement files
-
-Generating an explanation with guided rollout:
+<hr>
+<b>Generating an explanation with guided rollout:</b>
  1. Add the "abstractToPrism.py", "generateExplanations.py", "generateNotPossExp_3agTotalQ.py", and "policyConRoll3agABATotalQ.py" files to seac/seac folder. You may need to add "convertStates.py" to the seac/seac folder if the file is available.
  2. Make sure files produced from evaluating a policy are in the seac/seac folder.
  3. Add the "hayes_shah" and "quine_mcclusky" folders to seac/seac folder, replacing others if needed
