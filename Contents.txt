@@ -4,3 +4,5 @@ The Supplementary package contains
 3. RWARE Code Pipeline - An example of the code used for robotic warehouse (2 agents)
 4. Pressure Plate Pipeline - An example of the code used for the pressure plate plate (9 agents)
 5. User Study Data - Datasets for the user study
+
+*Due to large model size only one example is given per experimental domain. Further code and models for additional experiments can be made available upon request, but are all based on the code/examples shown here.
