@@ -1,0 +1,51 @@
+mdp
+
+label "ag1_fire_comp" = (fire_comp_ag1 = 1);
+label "ag2_fire_comp" = (fire_comp_ag2 = 1);
+label "ag3_fire_comp" = (fire_comp_ag3 = 1);
+label "ag1ag2_fire_comp" = (fire_comp_ag1 = 1) & (fire_comp_ag2 = 1);
+label "ag1ag3_fire_comp" = (fire_comp_ag1 = 1) & (fire_comp_ag3 = 1);
+label "ag2ag3_fire_comp" = (fire_comp_ag2 = 1) & (fire_comp_ag3 = 1);
+label "ag1ag2ag3_fire_comp" = (fire_comp_ag1 = 1) & (fire_comp_ag2 = 1) & (fire_comp_ag3 = 1);
+label "ag1_obstacle_comp" = (obstacle_comp_ag1 = 1);
+label "ag2_obstacle_comp" = (obstacle_comp_ag2 = 1);
+label "ag3_obstacle_comp" = (obstacle_comp_ag3 = 1);
+label "ag1ag2_obstacle_comp" = (obstacle_comp_ag1 = 1) & (obstacle_comp_ag2 = 1);
+label "ag1ag3_obstacle_comp" = (obstacle_comp_ag1 = 1) & (obstacle_comp_ag3 = 1);
+label "ag2ag3_obstacle_comp" = (obstacle_comp_ag2 = 1) & (obstacle_comp_ag3 = 1);
+label "ag1ag2ag3_obstacle_comp" = (obstacle_comp_ag1 = 1) & (obstacle_comp_ag2 = 1) & (obstacle_comp_ag3 = 1);
+label "ag1_victim_comp" = (victim_comp_ag1 = 1);
+label "ag2_victim_comp" = (victim_comp_ag2 = 1);
+label "ag3_victim_comp" = (victim_comp_ag3 = 1);
+label "ag1ag2_victim_comp" = (victim_comp_ag1 = 1) & (victim_comp_ag2 = 1);
+label "ag1ag3_victim_comp" = (victim_comp_ag1 = 1) & (victim_comp_ag3 = 1);
+label "ag2ag3_victim_comp" = (victim_comp_ag2 = 1) & (victim_comp_ag3 = 1);
+label "ag1ag2ag3_victim_comp" = (victim_comp_ag1 = 1) & (victim_comp_ag2 = 1) & (victim_comp_ag3 = 1);
+label "all_tasks_complete" = ((fire_comp_ag1 = 1) | (fire_comp_ag2 = 1) | (fire_comp_ag3 = 1)) & ((obstacle_comp_ag1 = 1) | (obstacle_comp_ag2 = 1) | (obstacle_comp_ag3 = 1)) & ((victim_comp_ag1 = 1) | (victim_comp_ag2 = 1) | (victim_comp_ag3 = 1));
+
+module agents
+fire_comp_ag1: [0..1] init 0;
+obstacle_comp_ag1: [0..1] init 0;
+victim_comp_ag1: [0..1] init 0;
+fire_comp_ag2: [0..1] init 0;
+obstacle_comp_ag2: [0..1] init 0;
+victim_comp_ag2: [0..1] init 0;
+fire_comp_ag3: [0..1] init 0;
+obstacle_comp_ag3: [0..1] init 0;
+victim_comp_ag3: [0..1] init 0;
+
+[go] (fire_comp_ag1 = 0) & (obstacle_comp_ag1 = 0) & (victim_comp_ag1 = 0) & (fire_comp_ag2 = 0) & (obstacle_comp_ag2 = 0) & (victim_comp_ag2 = 0) & (fire_comp_ag3 = 0) & (obstacle_comp_ag3 = 0) & (victim_comp_ag3 = 0) ->
+(684/697): (fire_comp_ag1' = 0) & (obstacle_comp_ag1' = 0) & (victim_comp_ag1' = 0) & (fire_comp_ag2' = 0) & (obstacle_comp_ag2' = 0) & (victim_comp_ag2' = 0) & (fire_comp_ag3' = 0) & (obstacle_comp_ag3' = 0) & (victim_comp_ag3' = 0)
++ (5/697): (fire_comp_ag1' = 0) & (obstacle_comp_ag1' = 0) & (victim_comp_ag1' = 0) & (fire_comp_ag2' = 0) & (obstacle_comp_ag2' = 0) & (victim_comp_ag2' = 1) & (fire_comp_ag3' = 0) & (obstacle_comp_ag3' = 0) & (victim_comp_ag3' = 1)
++ (8/697): (fire_comp_ag1' = 0) & (obstacle_comp_ag1' = 0) & (victim_comp_ag1' = 1) & (fire_comp_ag2' = 0) & (obstacle_comp_ag2' = 0) & (victim_comp_ag2' = 0) & (fire_comp_ag3' = 0) & (obstacle_comp_ag3' = 0) & (victim_comp_ag3' = 1)
+;
+[go] (fire_comp_ag1 = 0) & (obstacle_comp_ag1 = 0) & (victim_comp_ag1 = 0) & (fire_comp_ag2 = 0) & (obstacle_comp_ag2 = 0) & (victim_comp_ag2 = 1) & (fire_comp_ag3 = 0) & (obstacle_comp_ag3 = 0) & (victim_comp_ag3 = 1) ->
+(21/23): (fire_comp_ag1' = 0) & (obstacle_comp_ag1' = 0) & (victim_comp_ag1' = 0) & (fire_comp_ag2' = 0) & (obstacle_comp_ag2' = 0) & (victim_comp_ag2' = 1) & (fire_comp_ag3' = 0) & (obstacle_comp_ag3' = 0) & (victim_comp_ag3' = 1)
++ (2/23): (fire_comp_ag1' = 1) & (obstacle_comp_ag1' = 0) & (victim_comp_ag1' = 0) & (fire_comp_ag2' = 1) & (obstacle_comp_ag2' = 0) & (victim_comp_ag2' = 1) & (fire_comp_ag3' = 0) & (obstacle_comp_ag3' = 0) & (victim_comp_ag3' = 1)
+;
+[go] (fire_comp_ag1 = 1) & (obstacle_comp_ag1 = 0) & (victim_comp_ag1 = 0) & (fire_comp_ag2 = 1) & (obstacle_comp_ag2 = 0) & (victim_comp_ag2 = 1) & (fire_comp_ag3 = 0) & (obstacle_comp_ag3 = 0) & (victim_comp_ag3 = 1) ->
+(62/64): (fire_comp_ag1' = 1) & (obstacle_comp_ag1' = 0) & (victim_comp_ag1' = 0) & (fire_comp_ag2' = 1) & (obstacle_comp_ag2' = 0) & (victim_comp_ag2' = 1) & (fire_comp_ag3' = 0) & (obstacle_comp_ag3' = 0) & (victim_comp_ag3' = 1)
++ (2/64): (fire_comp_ag1' = 1) & (obstacle_comp_ag1' = 1) & (victim_comp_ag1' = 0) & (fire_comp_ag2' = 1) & (obstacle_comp_ag2' = 1) & (victim_comp_ag2' = 1) & (fire_comp_ag3' = 0) & (obstacle_comp_ag3' = 0) & (victim_comp_ag3' = 1)
+;
+
+endmodule

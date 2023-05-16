@@ -1,0 +1,17 @@
+userQuery = {"agent1": ["*","fire","obstacle"],   #Not Possible Query
+    "agent2":["victim","fire","obstacle"],
+    "agent3":["*","*","*"]}
+
+FOIL IS NOT POSSIBLE!
+
+victim:
+Needed Changes: Agent 3 rescued the victim
+
+NEW USER QUERY:  {'agent1': ['*', 'fire', 'obstacle'], 'agent2': ['victim', 'fire', 'obstacle'], 'agent3': ['victim', '*', '*']}
+
+FOIL IS POSSIBLE!
+
+Your current query is possible.
+
+Explanation:
+The agent 2 cannot rescue the victim because agent 2 needs agent 3 to help rescue the victim.
