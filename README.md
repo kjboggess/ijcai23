@@ -1,6 +1,7 @@
 # Explainable MARL For Temporal Queries
 <hr>
-Repository for supplementary material for "Explainable Multi-Agent Reinforcement Learning For Temporal Queries" published in IJCAI 2023.
+Repository for supplementary material for "Explainable Multi-Agent Reinforcement Learning For Temporal Queries" published in IJCAI 2023. <br>
+<b>Paper Link:</b>: Coming Soon...<br>
 <hr>
 OS tested on
 "Centos Linux 7"
@@ -47,6 +48,3 @@ OS tested on
  8. Run file -> "python policyConRoll3agABATotalQ.py"<br>
 	&emsp;&emsp;*Generates abstract mmdp through guided rollout and explanation for any impossible tasks<br>
  10. Example log output produced from evaluation are given in explanation output folder along with generated PRISM model and properties<br>
-<hr>
-<b>Paper Link:</b><br>
-Coming Soon...
