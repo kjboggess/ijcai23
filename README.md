@@ -4,23 +4,22 @@ Repository for supplementary material for "Explainable Multi-Agent Reinforcement
 <hr>
 OS tested on
 "Centos Linux 7"
-----
 <hr>
-Set up:
- 1. Download Shared Experience Actor Critic for MARL and install as instructed
-	*Used for training and evaluation policies
-	Location: https://github.com/semitable/seac
-	Rename "seac-master" folder to "seac"
- 2. Download Level-based Foraging Environment and install as instructed
-	*Used to register search and rescue and level-based foraging environments to gym
-	Location: https://github.com/uoe-agents/lb-foraging
- 3. Download further domains if preferred and install as instructed
-	Robotic warehouse domain location: https://github.com/uoe-agents/robotic-warehouse
-	Pressure plate location: https://github.com/semitable/pressureplate
- 4. Download "Improving Robot Controller Transparency Through Autonomous Policy Explanation" Implemenation and install as instructed
-	*Used to set up Quine-Mccluskey algorithm
-	Location: https://gitlab.tue.nl/ha800-hri/hayes-shah
- 5. Install remaining requirements in "requirements.txt" if needed
+Set up:<br>
+ 1. Download Shared Experience Actor Critic for MARL and install as instructed<br>
+	*Used for training and evaluation policiesv
+	Location: https://github.com/semitable/seac<br>
+	Rename "seac-master" folder to "seac"<br>
+ 2. Download Level-based Foraging Environment and install as instructed<br>
+	*Used to register search and rescue and level-based foraging environments to gym<br>
+	Location: https://github.com/uoe-agents/lb-foraging<br>
+ 3. Download further domains if preferred and install as instructed<br>
+	Robotic warehouse domain location: https://github.com/uoe-agents/robotic-warehouse<br>
+	Pressure plate location: https://github.com/semitable/pressureplate<br>
+ 4. Download "Improving Robot Controller Transparency Through Autonomous Policy Explanation" Implemenation and install as instructed<br>
+	*Used to set up Quine-Mccluskey algorithm<br>
+	Location: https://gitlab.tue.nl/ha800-hri/hayes-shah<br>
+ 5. Install remaining requirements in "requirements.txt" if needed<br>
 
 Training a policy:
  1. Polices should be trained as described by Shared Experience Actor Critic for MARL
