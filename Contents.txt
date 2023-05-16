@@ -1,0 +1,8 @@
+The Supplementary package contains
+1. SR Code Pipeline - An example of code used for search and rescue (3 agents)
+2. LBF Code Pipeline - An example of the code used for level-based foraging (3 agents)
+3. RWARE Code Pipeline - An example of the code used for robotic warehouse (2 agents)
+4. Pressure Plate Pipeline - An example of the code used for the pressure plate plate (9 agents)
+5. User Study Data - Datasets for the user study
+
+*Due size limit of technical appendix only one example is given per experimental domain. Further code and models will be made available upon paper acceptance.
