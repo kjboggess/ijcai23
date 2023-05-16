@@ -7,7 +7,7 @@ OS tested on
 <hr>
 <b>Set up:</b><br>
  1. Download Shared Experience Actor Critic for MARL and install as instructed<br>
-	&emsp;&emsp;*Used for training and evaluation policiesv
+	&emsp;&emsp;*Used for training and evaluation policies<br>
 	&emsp;&emsp;Location: https://github.com/semitable/seac<br>
 	&emsp;&emsp;Rename "seac-master" folder to "seac"<br>
  2. Download Level-based Foraging Environment and install as instructed<br>
