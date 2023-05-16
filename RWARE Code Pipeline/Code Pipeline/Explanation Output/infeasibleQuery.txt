@@ -1,0 +1,16 @@
+userQuery = {"agent1": ["*","*","*"],   #Not Possible Query
+    "agent2":["deliver_shelf4","deliver_shelf2","deliver_shelf1"]}
+
+FOIL IS NOT POSSIBLE!
+
+deliver_shelf4:
+Needed Changes: Agent 1 can deliver shelf 4
+
+THIS IS THE NEW USER QUERY {'agent1': ['deliver_shelf4', '*', '*'], 'agent2': ['*', 'deliver_shelf2', 'deliver_shelf1']}
+
+FOIL IS POSSIBLE!
+
+Your current query is possible.
+
+Explanation:
+The agent 2 cannot deliver shelf 4. Agent 1 must deliver shelf 4.

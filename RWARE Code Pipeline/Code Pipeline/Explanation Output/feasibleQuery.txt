@@ -1,0 +1,9 @@
+userQuery = {"agent1": ["deliver_shelf4","*","*"],   #Possible Query - UMNumber
+    "agent2":["*","deliver_shelf2","deliver_shelf1"]}
+
+FOIL IS POSSIBLE!
+
+Your current query is possible.
+
+Explanation:
+Your current query is possible.
