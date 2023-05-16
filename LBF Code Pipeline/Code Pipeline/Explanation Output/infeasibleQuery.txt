@@ -1,0 +1,17 @@
+userQuery = {"agent1": ["*","*","apple2"],   #Not Possible Query
+    "agent2":["apple3","*","apple2"],
+    "agent3":["apple3","apple1","*"]}
+
+FOIL IS NOT POSSIBLE!
+
+apple1:
+Needed Changes: Agent 1 picked apple 1
+
+NEW USER QUERY:  {'agent1': ['*', 'apple1', 'apple2'], 'agent2': ['apple3', '*', 'apple2'], 'agent3': ['apple3', 'apple1', '*']}
+
+FOIL IS POSSIBLE!
+
+Your current query is possible.
+
+Explanation:
+The agent 3 cannot pick apple 1 because agent 3 needs agent 1 to pick the apple.

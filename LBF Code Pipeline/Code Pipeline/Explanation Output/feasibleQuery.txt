@@ -1,0 +1,10 @@
+#userQuery = {"agent1": ["*","apple1","apple2"],   #Possible Query
+    #"agent2":["apple3","*","apple2"],
+    #"agent3":["apple3","apple1","*"]}
+
+FOIL IS POSSIBLE!
+
+Your current query is possible.
+
+Explanation:
+Your current query is possible.

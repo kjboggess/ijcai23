@@ -1,0 +1,50 @@
+mdp
+
+label "ag1_apple2_comp" = (apple2_comp_ag1 = 1);
+label "ag2_apple2_comp" = (apple2_comp_ag2 = 1);
+label "ag3_apple2_comp" = (apple2_comp_ag3 = 1);
+label "ag1ag2_apple2_comp" = (apple2_comp_ag1 = 1) & (apple2_comp_ag2 = 1);
+label "ag1ag3_apple2_comp" = (apple2_comp_ag1 = 1) & (apple2_comp_ag3 = 1);
+label "ag2ag3_apple2_comp" = (apple2_comp_ag2 = 1) & (apple2_comp_ag3 = 1);
+label "ag1ag2ag3_apple2_comp" = (apple2_comp_ag1 = 1) & (apple2_comp_ag2 = 1) & (apple2_comp_ag3 = 1);
+label "ag1_apple3_comp" = (apple3_comp_ag1 = 1);
+label "ag2_apple3_comp" = (apple3_comp_ag2 = 1);
+label "ag3_apple3_comp" = (apple3_comp_ag3 = 1);
+label "ag1ag2_apple3_comp" = (apple3_comp_ag1 = 1) & (apple3_comp_ag2 = 1);
+label "ag1ag3_apple3_comp" = (apple3_comp_ag1 = 1) & (apple3_comp_ag3 = 1);
+label "ag2ag3_apple3_comp" = (apple3_comp_ag2 = 1) & (apple3_comp_ag3 = 1);
+label "ag1ag2ag3_apple3_comp" = (apple3_comp_ag1 = 1) & (apple3_comp_ag2 = 1) & (apple3_comp_ag3 = 1);
+label "ag1_apple1_comp" = (apple1_comp_ag1 = 1);
+label "ag2_apple1_comp" = (apple1_comp_ag2 = 1);
+label "ag3_apple1_comp" = (apple1_comp_ag3 = 1);
+label "ag1ag2_apple1_comp" = (apple1_comp_ag1 = 1) & (apple1_comp_ag2 = 1);
+label "ag1ag3_apple1_comp" = (apple1_comp_ag1 = 1) & (apple1_comp_ag3 = 1);
+label "ag2ag3_apple1_comp" = (apple1_comp_ag2 = 1) & (apple1_comp_ag3 = 1);
+label "ag1ag2ag3_apple1_comp" = (apple1_comp_ag1 = 1) & (apple1_comp_ag2 = 1) & (apple1_comp_ag3 = 1);
+label "all_tasks_complete" = ((apple2_comp_ag1 = 1) | (apple2_comp_ag2 = 1) | (apple2_comp_ag3 = 1)) & ((apple3_comp_ag1 = 1) | (apple3_comp_ag2 = 1) | (apple3_comp_ag3 = 1)) & ((apple1_comp_ag1 = 1) | (apple1_comp_ag2 = 1) | (apple1_comp_ag3 = 1));
+
+module agents
+apple2_comp_ag1: [0..1] init 0;
+apple3_comp_ag1: [0..1] init 0;
+apple1_comp_ag1: [0..1] init 0;
+apple2_comp_ag2: [0..1] init 0;
+apple3_comp_ag2: [0..1] init 0;
+apple1_comp_ag2: [0..1] init 0;
+apple2_comp_ag3: [0..1] init 0;
+apple3_comp_ag3: [0..1] init 0;
+apple1_comp_ag3: [0..1] init 0;
+
+[go] (apple2_comp_ag1 = 0) & (apple3_comp_ag1 = 0) & (apple1_comp_ag1 = 0) & (apple2_comp_ag2 = 0) & (apple3_comp_ag2 = 0) & (apple1_comp_ag2 = 0) & (apple2_comp_ag3 = 0) & (apple3_comp_ag3 = 0) & (apple1_comp_ag3 = 0) ->
+(1078/1079): (apple2_comp_ag1' = 0) & (apple3_comp_ag1' = 0) & (apple1_comp_ag1' = 0) & (apple2_comp_ag2' = 0) & (apple3_comp_ag2' = 0) & (apple1_comp_ag2' = 0) & (apple2_comp_ag3' = 0) & (apple3_comp_ag3' = 0) & (apple1_comp_ag3' = 0)
++ (1/1079): (apple2_comp_ag1' = 0) & (apple3_comp_ag1' = 0) & (apple1_comp_ag1' = 0) & (apple2_comp_ag2' = 0) & (apple3_comp_ag2' = 1) & (apple1_comp_ag2' = 0) & (apple2_comp_ag3' = 0) & (apple3_comp_ag3' = 1) & (apple1_comp_ag3' = 0)
+;
+[go] (apple2_comp_ag1 = 0) & (apple3_comp_ag1 = 0) & (apple1_comp_ag1 = 0) & (apple2_comp_ag2 = 0) & (apple3_comp_ag2 = 1) & (apple1_comp_ag2 = 0) & (apple2_comp_ag3 = 0) & (apple3_comp_ag3 = 1) & (apple1_comp_ag3 = 0) ->
+(11/12): (apple2_comp_ag1' = 0) & (apple3_comp_ag1' = 0) & (apple1_comp_ag1' = 0) & (apple2_comp_ag2' = 0) & (apple3_comp_ag2' = 1) & (apple1_comp_ag2' = 0) & (apple2_comp_ag3' = 0) & (apple3_comp_ag3' = 1) & (apple1_comp_ag3' = 0)
++ (1/12): (apple2_comp_ag1' = 0) & (apple3_comp_ag1' = 0) & (apple1_comp_ag1' = 1) & (apple2_comp_ag2' = 0) & (apple3_comp_ag2' = 1) & (apple1_comp_ag2' = 0) & (apple2_comp_ag3' = 0) & (apple3_comp_ag3' = 1) & (apple1_comp_ag3' = 1)
+;
+[go] (apple2_comp_ag1 = 0) & (apple3_comp_ag1 = 0) & (apple1_comp_ag1 = 1) & (apple2_comp_ag2 = 0) & (apple3_comp_ag2 = 1) & (apple1_comp_ag2 = 0) & (apple2_comp_ag3 = 0) & (apple3_comp_ag3 = 1) & (apple1_comp_ag3 = 1) ->
+(8/9): (apple2_comp_ag1' = 0) & (apple3_comp_ag1' = 0) & (apple1_comp_ag1' = 1) & (apple2_comp_ag2' = 0) & (apple3_comp_ag2' = 1) & (apple1_comp_ag2' = 0) & (apple2_comp_ag3' = 0) & (apple3_comp_ag3' = 1) & (apple1_comp_ag3' = 1)
++ (1/9): (apple2_comp_ag1' = 1) & (apple3_comp_ag1' = 0) & (apple1_comp_ag1' = 1) & (apple2_comp_ag2' = 1) & (apple3_comp_ag2' = 1) & (apple1_comp_ag2' = 0) & (apple2_comp_ag3' = 0) & (apple3_comp_ag3' = 1) & (apple1_comp_ag3' = 1)
+;
+
+endmodule
