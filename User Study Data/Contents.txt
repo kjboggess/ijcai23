@@ -1,3 +1,0 @@
-1. UserStudyResults - Anonymized and cleaned data from user study
-2. statTest.py - File to run statistical tests
-3. ExplanationData - UserStudyResults file converted to work with statTest.py
