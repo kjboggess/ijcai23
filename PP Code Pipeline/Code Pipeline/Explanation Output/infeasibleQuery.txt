@@ -1,0 +1,24 @@
+userQuery = {"agent1": ["*","plate2","*"], #Not Possible
+    "agent2": ["*","*","*"],
+    "agent3": ["*","*","*"],
+    "agent4": ["*","*","*"],
+    "agent5": ["plate1","*","plate3"],
+    "agent6": ["*","*","*"],
+    "agent7": ["*","*","*"],
+    "agent8": ["*","*","*"],
+    "agent9": ["*","*","*"],
+    }
+
+FOIL IS NOT POSSIBLE!
+
+plate3:
+Needed Changes: Agent 3 is pressing plate 3
+
+THIS IS THE NEW USER QUERY {'agent1': ['*', 'plate2', '*'], 'agent2': ['*', '*', '*'], 'agent3': ['*', '*', 'plate3'], 'agent4': ['*', '*', '*'], 'agent5': ['plate1', '*', '*'], 'agent6': ['*', '*', '*'], 'agent7': ['*', '*', '*'], 'agent8': ['*', '*', '*'], 'agent9': ['*', '*', '*']}
+
+FOIL IS POSSIBLE!
+
+Your current query is possible.
+
+Explanation:
+The agent 5 cannot press plate3. Agent 3 must press plate 3.

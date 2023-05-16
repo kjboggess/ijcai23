@@ -1,0 +1,1 @@
+Pmax=? [(!("ag1_plate2_comp") U ("ag5_plate1_comp")) & (!("ag1_plate2_comp") U ("ag5_plate1_comp")) & (!("ag3_plate3_comp") U ("ag1_plate2_comp")) & (!("ag3_plate3_comp") U ("ag1_plate2_comp")) & (F(("ag5_plate1_comp")) & (F("ag1_plate2_comp")) & (F("ag3_plate3_comp")))]
