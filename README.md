@@ -1,8 +1,8 @@
 # Explainable MARL For Temporal Queries
 <hr>
 Repository for supplementary material for "Explainable Multi-Agent Reinforcement Learning For Temporal Queries" published in IJCAI 2023. <br>
-<b>Paper Link:</b> Coming Soon... <br/>
-<b>Previous Paper Link:</b> https://arxiv.org/abs/2204.12568 
+<b>Paper Link:</b> https://arxiv.org/abs/2305.10378 <br/>
+<b>Previous Paper Link:</b> https://arxiv.org/abs/2204.12568 <br/>
 	&emsp;&emsp;*More information on abstract policy graph generation present in repository
 <hr>
 OS tested on
